@@ -164,7 +164,8 @@ E_{i} = subs(E_{i},subvecParam,subvecValues);
 A_{i} = subs(A_{i},subvecParam,subvecValues);
 Bu_{i} = subs(Bu_{i},subvecParam,subvecValues);
 Ba_{i} = subs(Ba_{i},subvecParam,subvecValues);
-C_{i} = [0 0 1 0; 0 0 0 1];
+% C_{i} = [0 0 1 0; 0 0 0 1];
+C_{i} = eye(4);
 end
 
 

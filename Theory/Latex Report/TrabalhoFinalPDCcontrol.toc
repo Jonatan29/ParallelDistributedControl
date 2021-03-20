@@ -1,0 +1,7 @@
+\babel@toc {brazilian}{}
+\contentsline {section}{\numberline {1}Modelagem Dinâmica}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Formulação Newton Euler e Representação Via Sistema Descritor}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Representação Takagi-Sugeno}{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Controle}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Lei de Controle PDC}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Lei de Controle PDC com $\mathcal {H}_\infty $}{1}{subsection.2.2}%

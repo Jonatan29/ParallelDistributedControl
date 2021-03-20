@@ -20,11 +20,11 @@ end
 
 
 addpath('../SimulinkFiles')
-SimTime = 30;
+SimTime = input('-->Define the duration of the simulation:')
 out = sim('SIMULINK_InvertedPendulum_PDCHinf',SimTime)
 disp('--> The initial Conditions are:')
-% InitCond = [0 pi/4 0 0];
-InitCond = [0 0 0 0];
+ InitCond = [0 pi/4 0 0];
+%InitCond = [0 0 0 0];
 set_param('SIMULINK_InvertedPendulum_PDCHinf/Integrator','InitialCondition',mat2str(InitCond))
 disp(InitCond)
 X1 = out.outX(:,1);
@@ -41,18 +41,21 @@ plot(time,X1,'-r',time,X2,'-b')
     ylabel('States')
     legend('s','\theta')
      grid on
+     xlim([0 SimTime])
 subplot(2,2,2)
 plot(time,X3,'-g',time,X4,'-y')
     xlabel('simulaton time')
     ylabel('States')
     legend('v','\omega')
      grid on
+      xlim([0 SimTime])
 subplot(2,2,3)
 plot(time,U,'-r')
     xlabel('simulaton time')
     ylabel('Control Inputs')
     ylim([-7 7])
      grid on
+      xlim([0 SimTime])
 subplot(2,2,4)
 plot(linspace(0,time(end),length(ALFA)),ALFA,'-b')
  grid on
@@ -60,4 +63,5 @@ plot(linspace(0,time(end),length(ALFA)),ALFA,'-b')
  xlim([0 time(end)])
  xlabel('simulaton time')
  ylabel('Terrain Inclination')
+  xlim([0 SimTime])
   suptitle('Results For PDC Mixed w/ Hinf Controller')

@@ -1,0 +1,122 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm,rmargin=2cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{amsthm}
+\usepackage{amsmath}
+%\numberwithin{equation}{section}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+%\usepackage{mnsymbol}
+\usepackage[authoryear]{natbib}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[hyphens]{url}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{import}
+\usepackage{bm}
+\usepackage{cancel}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\graphicspath{{Figures/}}
+
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\makeatletter
+\usepackage[colorlinks=true,linkcolor=red]{hyperref}
+\makeatother
+
+\bibliographystyle{apalike2}
+
+\begin{document}
+% ------------------ NOTA -----------------------
+%
+% 1 - Você não precisa alterar o arquivo de template, somente esse arquivo.
+% 2 - Abaixo de cada comando há uma nota que o auxiliará a preencher os campos. Todos os
+%     comandos são auto-explicáveis, mas as notas o ajudarão em caso de dúvidas.
+%
+% -----------------------------------------------
+
+\newcommand{\surname}{RAFFO}
+% Substitua "SOBRENOME" por ADORNO, RAFFO ou PIMENTA, conforme quem for o seu orientador.
+% No caso de haver um co-orientador, use as três primeiras letras de cada sobrenome separadas
+% por '/'. Por exemplo, se seu orientador é o Prof. Adorno e seu co-orientador é o Prof.
+% Pimenta, escreva ADO/PIM.
+
+\newcommand{\initials}{JMC}
+% Coloque suas iniciais aqui (ex., Bruno Vilhena Adorno = BVA)
+
+\newcommand{\reportnumber}{1}
+% Mude "X" pelo número do relatório
+
+\newcommand{\reportversion}{1}
+% Mude "Y" pelo número da versão do relatório.
+
+\newcommand{\reporttitle}{\textbf{Parallel Distributed Control(PDC) de um Pendulo Invertido Via Representação Takagi-Sugeno}}
+
+\newcommand{\registrationnumber}{2016086496}
+
+\newcommand{\studentname}{Jonatan Mota Campos}
+
+\newcommand{\advisorname}{Guilherme Vianna Raffo}
+
+\newcommand{\coadvisorname}{}
+
+\include{report_template/ReportTemplate-PT}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{arabic}
+% % % % % % % % % % % % % % % % % % % % % % % % % % %
+\newcommand{\zero}{\bm{\emptyset}}
+
+\section{Modelagem Dinâmica}
+\subsection{Formulação Newton Euler e Representação Via Sistema Descritor}
+\subsection{Representação Takagi-Sugeno}
+\section{Controle}
+\subsection{Lei de Controle PDC}
+\subsection{Lei de Controle PDC com $\mathcal{H}_\infty$}
+
+
+
+\end{document}

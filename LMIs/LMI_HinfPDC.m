@@ -14,8 +14,8 @@ for i =1:N
    Y{i} = sdpvar(nu,nx); 
 end
  X= sdpvar(nx,nx,'full');
-% gamma = sdpvar(1,1);
-gamma = 0.01;
+%  gamma = sdpvar(1,1); % numeric problems in simulink
+ gamma = 0.001;
 LMIs = [];
 for i=1:N
        
