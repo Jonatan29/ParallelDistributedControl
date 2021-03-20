@@ -1,4 +1,4 @@
-function [K, diagnostic, primal] = PDCcontroller(E,A,Bu,Ba,mu,vertices)
+function [K, diagnostic, primal] = LMI_PDC(E,A,Bu,Ba,mu,vertices)
 
 N = vertices; % Numero de "Vértices"
 disp('O numero de "vértices" é:')

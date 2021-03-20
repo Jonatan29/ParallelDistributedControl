@@ -1,4 +1,4 @@
-function [gamma,K, diagnostic, primal] = controller_HinfPDC(E,A,Bu,Ba,C,mu,vertices)
+function [gamma,K, diagnostic, primal] = LMI_HinfPDC(E,A,Bu,Ba,C,mu,vertices)
 
 N = vertices; % Numero de "Vértices"
 disp('O numero de "vértices" é:')

@@ -23,9 +23,9 @@ Az = [0 0 1 0;...
   
   
 %% Define Function sinc(x) = sin(x)/x  
-  sinceq = @(x) sin(x)/x
+  sinceq = @(x) sin(x)/x;
  %% Implementa Função para Pegar Pertencimento da Regra
-  getw = @(gx,max,min) (gx-min)/(max - min)
+  getw = @(gx,max,min) (gx-min)/(max - min);
 %% Sector Non Linearities 
   Z1 = subs(z1,cos(theta));
   Z2 = subs(z2,sin(theta)*omega);
@@ -35,12 +35,12 @@ Az = [0 0 1 0;...
   
   az1max = 1;
   az1min = cos(pi/4);
-  wz1max = getw(Z1,az1max,az1min)
-  wz1min = 1 - wz1max
+  wz1max = getw(Z1,az1max,az1min);
+  wz1min = 1 - wz1max;
   
   
     %% Acha o Minimo de Z2
-  it =1
+  it =1;
   minZ2= 100;
   maxZ2 =0;
   IntervalTheta = [-pi/2 pi/2];
@@ -61,12 +61,12 @@ end
   
   az2max = maxZ2;
   az2min = minZ2;
-  wz2max = getw(Z2,az2max,az2min)
-  wz2min = 1 - wz2max 
+  wz2max = getw(Z2,az2max,az2min);
+  wz2min = 1 - wz2max; 
   
   
   %% Acha o Minimo de Z3
-  it =1
+  it =1;
   minZ3= 100;
   maxZ3 =0;
   IntervalAlfa = [-0.1745 0.1745];
@@ -86,8 +86,8 @@ end
   
   az3max = maxZ3;
   az3min = minZ3;
-  wz3max = getw(Z3,az3max,az3min)
-  wz3min = 1 - wz3max 
+  wz3max = getw(Z3,az3max,az3min);
+  wz3min = 1 - wz3max ;
   
   %% Define Vértices
   vertices = 2^(length(Z))
@@ -145,7 +145,7 @@ Bu_{8} = Bz;
 Ba_{8} = subs(Baz,z1,az1min); 
 h(8) = wz1min*wz2min*wz3min;
 
-%% chack if h belongs to unitary simplex
+%% check if h belongs to unitary simplex
 test = simplify(sum(h))
 if test == 1
     disp('--> h belogs to the unitary simplex')
@@ -153,9 +153,8 @@ else
     error('h doesnt belong to the unitary simplex')
 end
 
-%definir depois como glbal as matrizes
-%  X = eye(4);
 
+%% Global Descriptor System
 vertices = 8;
 subvecParam = [M m l g kv];
 subvecValues = [1.5 0.3 0.3 9.78 1];
@@ -168,141 +167,37 @@ Ba_{i} = subs(Ba_{i},subvecParam,subvecValues);
 C_{i} = [0 0 1 0; 0 0 0 1];
 end
 
-%  mu = 0.1
-%   [gamma Khinf, diagnostichinf, primalhinf] = controller_HinfPDC(E_,A_,Bu_,Ba_,C_,mu,vertices);
 
+global PertinenciaNormalizada
+PertinenciaNormalizada.h = h;
+ global DescriptorSystemDynamics
 
-% mu=0.1;
-% for mu
-% [K, diagnostic, primal] = PDCcontroller(E_,A_,Bu_,Ba_,mu,vertices);
+ DescriptorSystemDynamics.E = E_;
+ DescriptorSystemDynamics.A = A_;
+ DescriptorSystemDynamics.Bu = Bu_;
+ DescriptorSystemDynamics.Ba = Ba_;
+ DescriptorSystemDynamics.C = C_;
 
-%% To find which mu to use
-Mumax = 0.6;
-Mumin = 0.1;
-deltaMu = 0.1;
- muvec = Mumin:deltaMu:Mumax; % Mu it's a scalar greater than zero
- for i =1:length(muvec) 
-     mu =muvec(i);
-  [gamma{i}, K{i}, diagnostic{i}, primalhinf{i}] = controller_HinfPDC(E_,A_,Bu_,Ba_,C_,mu,vertices);
-end
+%% Fuzzy Descriptor System
 
-
- for i =1:length(K)
-     for j =1:1:8
-    k1vec(i,j) = K{i}{j}(1,1);
-    k2vec(i,j) = K{i}{j}(1,2); 
-    k3vec(i,j) = K{i}{j}(1,3); 
-    k4vec(i,j) = K{i}{j}(1,4);
-     end
-end
-%% Check for Feasibility
-disp('+++++++++++++++++++++++++++++++++++++++++++++++++++')
-disp('[TEST!]Testing for Feasibility[TEST!]')
- for i =1:length(muvec) 
-    if strcmp(diagnostic{i}.info,'Infeasible problem (SeDuMi-1.3)') 
-        warning('Solver Says it is Infeasible')
-    else 
-        disp('Feasible Solution')        
-    end
- end
-disp('+++++++++++++++++++++++++++++++++++++++++++++++++++')
-
-
-%% Plot Results to Evaluate Scalar Mu
-disp('++++++++++++++++++++++++++++++++++++++++++')
-PlotMuInfluence(k1vec,vertices)
-ylabel('k_1')
-PlotMuInfluence(k2vec,vertices)
-ylabel('k_2')
-PlotMuInfluence(k3vec,vertices)
-ylabel('k_3')
-PlotMuInfluence(k4vec,vertices)
-ylabel('k_4')
-
-disp('-->This is how the scalar mu influences the behavior of the Controller')
-disp('++++++++++++++++++++++++++++++++++++++++++')
-  
-%% Optimization process after choosing mu
-% mu = muvec(3);
-disp('-->The tested values of mu are stacked in a vector "muvec"')
-disp('-->Choose the index which corresponds to the desired mu')
-muIndex = input('-->Index for "muvec":')
-if floor(muIndex) ~= muIndex
-   error('[Error!]The Index Must be a Integer![Error!]') 
-end
-disp('--> The selected scalar mu is:')
-disp(mu)
-mu = muvec(muIndex);
-[gamma, K, diagnostic, primalhinf] = controller_HinfPDC(E_,A_,Bu_,Ba_,C_,mu,vertices);
-
-
-
-
-%% Global Fuzzy Descriptor System
-% global DescriptorSystemFuzzy
-% global ControllerFuzzy
 fuzzyE = 0;
 fuzzyA = 0;
 fuzzyBu = 0;
 fuzzyBa = 0;
-fuzzyK = 0;
+fuzzyC = 0;
 for i=1:vertices
     fuzzyE = fuzzyE + simplify(h(i)*E_{i});
     fuzzyA = fuzzyA + simplify(h(i)*A_{i});
     fuzzyBu = fuzzyBu + simplify(h(i)*Bu_{i});
     fuzzyBa = fuzzyBa + simplify(h(i)*Ba_{i});
-    fuzzyK = fuzzyK + simplify(h(i)*K{i});
+    fuzzyC = fuzzyC + simplify(h(i)*C_{i});
 end
 
-% DescriptorSystemFuzzy.Eh = fuzzyE;
-% DescriptorSystemFuzzy.Ah = fuzzyA;
-% DescriptorSystemFuzzy.Buh = fuzzyBu;
-% DescriptorSystemFuzzy.Bah = fuzzyBa;
-% ControllerFuzzy.Kh = fuzzyK;
 
-dlmwrite('outEhinf.txt',char(fuzzyE),'delimiter','')
-dlmwrite('outAhinf.txt',char(fuzzyA),'delimiter','')
-dlmwrite('outBuhinf.txt',char(fuzzyBu),'delimiter','')
-dlmwrite('outBahinf.txt',char(fuzzyBa),'delimiter','')
-dlmwrite('outKuhinf.txt',char(fuzzyK),'delimiter','')
+dlmwrite('../OutDynamics/outE.txt',char(simplify(fuzzyE)),'delimiter','')
+dlmwrite('../OutDynamics/outA.txt',char(simplify(fuzzyA)),'delimiter','')
+dlmwrite('../OutDynamics/outBu.txt',char(simplify(fuzzyBu)),'delimiter','')
+dlmwrite('../OutDynamics/outBa.txt',char(simplify(fuzzyBa)),'delimiter','')
+dlmwrite('../OutDynamics/outC.txt',char(simplify(fuzzyC)),'delimiter','')
 
 
-%% Simulation and Results
-SimTime = 30;
-out = sim('SIMULINK_SimulationInvertedPendulum',SimTime)
-disp('--> The initial Conditions are:')
-InitCond = [0 pi/4 0 0];
-disp(InitCond)
-X1 = out.outX(:,1);
-X2 = out.outX(:,2);
-X3 = out.outX(:,3);
-X4 = out.outX(:,4);
-U = out.outU;
-ALFA = out.outAlfa;
-time = out.tout;
-figure
-subplot(2,2,1)
-plot(time,X1,'-r',time,X2,'-b')
-    xlabel('simulaton time')
-    ylabel('States')
-    legend('s','\theta')
-     grid on
-subplot(2,2,2)
-plot(time,X3,'-g',time,X4,'-y')
-    xlabel('simulaton time')
-    ylabel('States')
-    legend('v','\omega')
-     grid on
-subplot(2,2,3)
-plot(time,U,'-r')
-    xlabel('simulaton time')
-    ylabel('Control Inputs')
-    ylim([-7 7])
-     grid on
-subplot(2,2,4)
-plot(linspace(0,time(end),length(ALFA)),ALFA,'-b')
- grid on
- set(gcf,'color','w');
- xlim([0 time(end)])
- xlabel('simulaton time')
- ylabel('Terrain Inclination')
