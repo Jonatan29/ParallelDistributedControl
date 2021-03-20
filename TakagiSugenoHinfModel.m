@@ -168,8 +168,8 @@ Ba_{i} = subs(Ba_{i},subvecParam,subvecValues);
 C_{i} = [0 0 1 0; 0 0 0 1];
 end
 
-% mu = 0.1
-%  [gamma Khinf, diagnostichinf, primalhinf] = controller_HinfPDC(E_,A_,Bu_,Ba_,C_,mu,vertices);
+%  mu = 0.1
+%   [gamma Khinf, diagnostichinf, primalhinf] = controller_HinfPDC(E_,A_,Bu_,Ba_,C_,mu,vertices);
 
 
 % mu=0.1;
@@ -183,8 +183,8 @@ deltaMu = 0.1;
  muvec = Mumin:deltaMu:Mumax; % Mu it's a scalar greater than zero
  for i =1:length(muvec) 
      mu =muvec(i);
-[K{i}, diagnostic{i}, primal] = PDCcontroller(E_,A_,Bu_,Ba_,mu,vertices);
- end
+  [gamma{i}, K{i}, diagnostic{i}, primalhinf{i}] = controller_HinfPDC(E_,A_,Bu_,Ba_,C_,mu,vertices);
+end
 
 
  for i =1:length(K)
@@ -233,7 +233,7 @@ end
 disp('--> The selected scalar mu is:')
 disp(mu)
 mu = muvec(muIndex);
-[K, diagnostic, primal] = PDCcontroller(E_,A_,Bu_,Ba_,mu,vertices);
+[gamma, K, diagnostic, primalhinf] = controller_HinfPDC(E_,A_,Bu_,Ba_,C_,mu,vertices);
 
 
 
@@ -260,11 +260,11 @@ end
 % DescriptorSystemFuzzy.Bah = fuzzyBa;
 % ControllerFuzzy.Kh = fuzzyK;
 
-dlmwrite('outE.txt',char(fuzzyE),'delimiter','')
-dlmwrite('outA.txt',char(fuzzyA),'delimiter','')
-dlmwrite('outBu.txt',char(fuzzyBu),'delimiter','')
-dlmwrite('outBa.txt',char(fuzzyBa),'delimiter','')
-dlmwrite('outKu.txt',char(fuzzyK),'delimiter','')
+dlmwrite('outEhinf.txt',char(fuzzyE),'delimiter','')
+dlmwrite('outAhinf.txt',char(fuzzyA),'delimiter','')
+dlmwrite('outBuhinf.txt',char(fuzzyBu),'delimiter','')
+dlmwrite('outBahinf.txt',char(fuzzyBa),'delimiter','')
+dlmwrite('outKuhinf.txt',char(fuzzyK),'delimiter','')
 
 
 %% Simulation and Results
