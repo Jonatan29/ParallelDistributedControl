@@ -1,4 +1,5 @@
-
+disp('+++++++++++++++++++++++++++++++++++++++++++')
+disp('--> Running PDC mixed Hinf Control File')
 addpath('../../LMIs')
 addpath('../../Functions')
 %% Global Fuzzy Descriptor System
@@ -76,8 +77,10 @@ end
 disp('--> The selected scalar mu is:')
 mu = muvec(muIndex);
 disp(mu)
+disp('++++++++++++++++++++++++++++++++++++++++')
+disp('--> PDC Hinf LMI optimization:')
 [gamma, K, diagnostic, primalhinf] = LMI_HinfPDC(E_,A_,Bu_,Ba_,C_,mu,vertices);
-
+disp('++++++++++++++++++++++++++++++++++++++++')
 global PertinenciaNormalizada
 h = PertinenciaNormalizada.h;
 fuzzyK = 0;
@@ -86,5 +89,7 @@ for i=1:vertices
 end
 dlmwrite('../OutControllerGains/outK.txt',char(simplify(fuzzyK)),'delimiter','')
 
-
+disp('--> Fuzzy Controller Gains written to file')
+disp('--> PDC mixed Hinf Controller Obtained')
+disp('+++++++++++++++++++++++++++++++++++++++++++')
 

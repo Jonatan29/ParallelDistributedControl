@@ -22,9 +22,13 @@ addpath('../SimulinkFiles')
 SimTime = input('-->Define the duration of the simulation:')
 out = sim('SIMULINK_InvertedPendulum_PDC',SimTime)
 disp('--> The initial Conditions are:')
-InitCond = [0 pi/4 0 0];
-set_param('SIMULINK_InvertedPendulum_PDC/Integrator','InitialCondition',mat2str(InitCond))
-disp(InitCond)
+InitCondqp = [0 pi/4];
+InitCondq = [0 0];
+% set_param('SIMULINK_InvertedPendulum_PDC/Integrator','InitialCondition',mat2str(InitCond))
+set_param('SIMULINK_InvertedPendulum_PDC/Integratorqpp','InitialCondition',mat2str(InitCondqp))
+set_param('SIMULINK_InvertedPendulum_PDC/Integratorqp','InitialCondition',mat2str(InitCondq))
+disp(InitCondqp)
+disp(InitCondq)
 X1 = out.outX(:,1);
 X2 = out.outX(:,2);
 X3 = out.outX(:,3);

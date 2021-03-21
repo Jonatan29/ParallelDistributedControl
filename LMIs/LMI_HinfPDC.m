@@ -21,9 +21,9 @@ for i=1:N
        
    LMIs = LMIs + (Pbar >= 0);
 
-A{i} = double(A{i});
-Bu{i} = double(Bu{i});
-E{i} = double(E{i});
+% A{i} = double(A{i});
+% Bu{i} = double(Bu{i});
+% E{i} = double(E{i});
 
     Qii = HinfPDCMatrix(i,i,E,A,Bu,C,mu,Pbar,X,Y,nx,nz,nba,gamma);
      LMIs = LMIs + (Qii <= 0);

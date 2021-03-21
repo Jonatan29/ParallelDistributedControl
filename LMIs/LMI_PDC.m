@@ -19,10 +19,6 @@ for i=1:N
        
    LMIs = LMIs + (Pbar >= 0);
 
-A{i} = double(A{i});
-Bu{i} = double(Bu{i});
-E{i} = double(E{i});
-
     Qii = PhiMatrix(i,i,E,A,Bu,mu,Pbar,X,Y);
      LMIs = LMIs + (Qii <= 0);
 

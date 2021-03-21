@@ -1,6 +1,8 @@
 clear
 clc
-
+disp('++++++++++++++++++++++++++++++++++++')
+disp('--> Running File "ScripTakagiSugenoModel.m"')
+disp('++++++++++++++++++++++++++++++++++++')
 syms M m l g kv real
 syms z1 z2 z3 real
 
@@ -31,10 +33,26 @@ Az = [0 0 1 0;...
   Z2 = subs(z2,sin(theta)*omega);
   Z3 = subs(z3,cos(alfa)*sinctheta);
   Z = [Z1;Z2;Z3];
-
+ %% Acha o Minimo de Z1
+  IntervalTheta = [-deg2rad(80) deg2rad(80)];
+    it =1;
+  minZ1= 100;
+  maxZ1 =0;
+   for th = IntervalTheta(1):0.0175:IntervalTheta(2)
+       teste(it) = cos(th);
+        if teste(it) < minZ1
+            minZ1 = teste(it);
+        end
+        if teste(it) > maxZ1
+            maxZ1 = teste(it);
+        end
+        it = it+1;
+    end
   
-  az1max = 1;
-  az1min = cos(pi/4);
+%   az1max = 1;
+%   az1min = cos(pi/4);
+  az1max = maxZ1;
+  az1min = minZ1;
   wz1max = getw(Z1,az1max,az1min);
   wz1min = 1 - wz1max;
   
@@ -43,8 +61,10 @@ Az = [0 0 1 0;...
   it =1;
   minZ2= 100;
   maxZ2 =0;
-  IntervalTheta = [-pi/2 pi/2];
-  IntervalOmega = [-pi/6 pi/6];
+%   IntervalTheta = [-pi/2 pi/2];
+%   IntervalOmega = [-pi/6 pi/6];
+
+  IntervalOmega = [-deg2rad(20) deg2rad(20)];
  for th = IntervalTheta(1):0.0175:IntervalTheta(2)
     for om = IntervalOmega(1):0.0175:IntervalOmega(2)
         teste(it) = sin(th)*om;
@@ -69,10 +89,14 @@ end
   it =1;
   minZ3= 100;
   maxZ3 =0;
-  IntervalAlfa = [-0.1745 0.1745];
+%   IntervalAlfa = [-0.1745 0.1745];
+IntervalAlfa = [-deg2rad(10) deg2rad(10)];
    for th = IntervalTheta(1):0.0175:IntervalTheta(2)
     for al = IntervalAlfa(1):0.0175:IntervalAlfa(2)
         teste(it) = cos(al)*sinceq(th);
+        if th == 0
+           teste(it) = cos(al); 
+        end
         if teste(it) < minZ3
             minZ3 = teste(it);
         end
@@ -160,10 +184,10 @@ subvecParam = [M m l g kv];
 subvecValues = [1.5 0.3 0.3 9.78 1];
 
 for i =1:vertices
-E_{i} = subs(E_{i},subvecParam,subvecValues);
-A_{i} = subs(A_{i},subvecParam,subvecValues);
-Bu_{i} = subs(Bu_{i},subvecParam,subvecValues);
-Ba_{i} = subs(Ba_{i},subvecParam,subvecValues);
+E_{i} = double(subs(E_{i},subvecParam,subvecValues));
+A_{i} = double(subs(A_{i},subvecParam,subvecValues));
+Bu_{i} = double(subs(Bu_{i},subvecParam,subvecValues));
+Ba_{i} = double(subs(Ba_{i},subvecParam,subvecValues));
 % C_{i} = [0 0 1 0; 0 0 0 1];
 C_{i} = eye(4);
 end
@@ -195,10 +219,11 @@ for i=1:vertices
 end
 
 
-dlmwrite('../OutDynamics/outE.txt',char(simplify(fuzzyE)),'delimiter','')
-dlmwrite('../OutDynamics/outA.txt',char(simplify(fuzzyA)),'delimiter','')
-dlmwrite('../OutDynamics/outBu.txt',char(simplify(fuzzyBu)),'delimiter','')
-dlmwrite('../OutDynamics/outBa.txt',char(simplify(fuzzyBa)),'delimiter','')
-dlmwrite('../OutDynamics/outC.txt',char(simplify(fuzzyC)),'delimiter','')
-
-
+% dlmwrite('../OutDynamics/outE.txt',char(simplify(fuzzyE)),'delimiter','')
+% dlmwrite('../OutDynamics/outA.txt',char(simplify(fuzzyA)),'delimiter','')
+% dlmwrite('../OutDynamics/outBu.txt',char(simplify(fuzzyBu)),'delimiter','')
+% dlmwrite('../OutDynamics/outBa.txt',char(simplify(fuzzyBa)),'delimiter','')
+% dlmwrite('../OutDynamics/outC.txt',char(simplify(fuzzyC)),'delimiter','')
+% 
+disp('--> Takagi Sugeno Model Obtained')
+disp('+++++++++++++++++++++++++++++++++++++++++++')

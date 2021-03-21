@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  20 MAR 2021 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  21 MAR 2021 17:22
 entering extended mode
 **./TrabalhoFinalPDCcontrol.tex
 (TrabalhoFinalPDCcontrol.tex
@@ -525,7 +525,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip73
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 67
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 70
 .
  ("D:\dados\Latex\Compilador Latex\install\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -538,22 +538,22 @@ File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
 ) (TrabalhoFinalPDCcontrol.aux (report_template/ReportTemplate-PT.aux))
 \openout1 = `TrabalhoFinalPDCcontrol.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -617,7 +617,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 67.
+Package hyperref Info: Link coloring ON on input line 70.
  ("D:\dados\Latex\Compilador Latex\install\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 ("D:\dados\Latex\Compilador Latex\install\tex/latex/refcount\refcount.sty"
@@ -629,9 +629,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count312
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
  (TrabalhoFinalPDCcontrol.out) (TrabalhoFinalPDCcontrol.out)
 \@outlinefile=\write3
 \openout3 = `TrabalhoFinalPDCcontrol.out'.
@@ -699,35 +699,18 @@ plate/macro_inline_name.pdf>]) (TrabalhoFinalPDCcontrol.toc)
 
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 118.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 118.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 118.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 118.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 118.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\infty' on input line 118.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 118.
-
-<report_template/macro_inline.pdf, id=78, 1185.55937pt x 239.93188pt>
+<fig/pendulo.png, id=78, 335.45325pt x 293.898pt>
+File: fig/pendulo.png Graphic file (type png)
+<use fig/pendulo.png>
+Package pdftex.def Info: fig/pendulo.png  used on input line 141.
+(pdftex.def)             Requested size: 167.7262pt x 146.94862pt.
+<report_template/macro_inline.pdf, id=80, 1185.55937pt x 239.93188pt>
 File: report_template/macro_inline.pdf Graphic file (type pdf)
 <use report_template/macro_inline.pdf>
-Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 1
-22.
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 2
+05.
 (pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 18.28088pt, for example:
@@ -740,33 +723,89 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122 \end{document}
-                     [1 <./report_template/macro_inline.pdf>]
-(TrabalhoFinalPDCcontrol.aux (report_template/ReportTemplate-PT.aux))
+l.205 \end{gather}
+                   [1 <./report_template/macro_inline.pdf> <./fig/pendulo.png>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+30.
+("D:\dados\Latex\Compilador Latex\install\tex/latex/lm\ts1lmr.fd"
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 248.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 248.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 248.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 248.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 248.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\infty' on input line 248.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 248.
+
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 2
+52.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.252 \end{document}
+                     [2] (TrabalhoFinalPDCcontrol.aux
+(report_template/ReportTemplate-PT.aux))
 Package rerunfilecheck Info: File `TrabalhoFinalPDCcontrol.out' has not changed
 .
-(rerunfilecheck)             Checksum: 2E5FA11E6A6B4864FA842047376D05FE;445.
+(rerunfilecheck)             Checksum: 9C2271145DF2CB0F1614E513F8187681;477.
  ) 
 Here is how much of TeX's memory you used:
- 12828 strings out of 479618
- 196785 string characters out of 2867341
- 521028 words of memory out of 3000000
- 29717 multiletter control sequences out of 15000+200000
- 478330 words of font info for 86 fonts, out of 3000000 for 9000
+ 12898 strings out of 479618
+ 198143 string characters out of 2867341
+ 546028 words of memory out of 3000000
+ 29758 multiletter control sequences out of 15000+200000
+ 478695 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,15n,74p,297b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,21n,74p,694b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/dados/Latex/Compilador Latex/install/fonts/enc/dvips/lm/lm-mathsy.enc}{D:
-/dados/Latex/Compilador Latex/install/fonts/enc/dvips/lm/lm-ec.enc}<D:/dados/La
-tex/Compilador Latex/install/fonts/type1/public/lm/lmbx10.pfb><D:/dados/Latex/C
-ompilador Latex/install/fonts/type1/public/lm/lmbx12.pfb><D:/dados/Latex/Compil
-ador Latex/install/fonts/type1/public/lm/lmr10.pfb><D:/dados/Latex/Compilador L
-atex/install/fonts/type1/public/lm/lmr12.pfb><D:/dados/Latex/Compilador Latex/i
-nstall/fonts/type1/public/lm/lmsy10.pfb><D:/dados/Latex/Compilador Latex/instal
-l/fonts/type1/public/lm/lmsy7.pfb><D:/dados/Latex/Compilador Latex/install/font
-s/type1/public/lm/lmsy8.pfb>
-Output written on TrabalhoFinalPDCcontrol.pdf (3 pages, 170162 bytes).
+/dados/Latex/Compilador Latex/install/fonts/enc/dvips/lm/lm-ts1.enc}{D:/dados/L
+atex/Compilador Latex/install/fonts/enc/dvips/lm/lm-rm.enc}{D:/dados/Latex/Comp
+ilador Latex/install/fonts/enc/dvips/lm/lm-mathit.enc}{D:/dados/Latex/Compilado
+r Latex/install/fonts/enc/dvips/lm/lm-mathex.enc}{D:/dados/Latex/Compilador Lat
+ex/install/fonts/enc/dvips/lm/lm-ec.enc}<D:/dados/Latex/Compilador Latex/instal
+l/fonts/type1/public/lm/lmbx10.pfb><D:/dados/Latex/Compilador Latex/install/fon
+ts/type1/public/lm/lmbx12.pfb><D:/dados/Latex/Compilador Latex/install/fonts/ty
+pe1/public/lm/lmex10.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/p
+ublic/lm/lmmi10.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public
+/lm/lmmi7.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lm
+mib10.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmmib7
+.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmr10.pfb><
+D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmr12.pfb><D:/dad
+os/Latex/Compilador Latex/install/fonts/type1/public/lm/lmr7.pfb><D:/dados/Late
+x/Compilador Latex/install/fonts/type1/public/lm/lmsy10.pfb><D:/dados/Latex/Com
+pilador Latex/install/fonts/type1/public/lm/lmsy7.pfb><D:/dados/Latex/Compilado
+r Latex/install/fonts/type1/public/lm/lmsy8.pfb>
+Output written on TrabalhoFinalPDCcontrol.pdf (4 pages, 264152 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 205 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 64 words of extra memory for PDF output out of 10000 (max. 10000000)
 

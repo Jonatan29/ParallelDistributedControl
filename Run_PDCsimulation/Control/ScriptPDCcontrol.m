@@ -1,4 +1,5 @@
-
+disp('+++++++++++++++++++++++++++++++++++++++++++')
+disp('--> Running PDC Control File')
 addpath('../../LMIs')
 addpath('../../Functions')
 %% Global Fuzzy Descriptor System
@@ -20,9 +21,7 @@ Mumin = input('Choose the minimum value of mu:')
 Mumax = input('Choose the maximum value of mu:')
 deltaMu = input('Choose the fixed step for the search:')
 disp('++++++++++++++++++++++++++++++++++++++++++++++++++')
-% Mumax = 0.6;
-% Mumin = 0.1;
-% deltaMu = 0.1;
+
  muvec = Mumin:deltaMu:Mumax; % Mu it's a scalar greater than zero
  for i =1:length(muvec) 
      mu =muvec(i);
@@ -76,8 +75,10 @@ end
 disp('--> The selected scalar mu is:')
 mu = muvec(muIndex);
 disp(mu)
+disp('++++++++++++++++++++++++++++++++++++++++')
+disp('--> PDC LMI optimization:')
 [K, diagnostic, primal] = LMI_PDC(E_,A_,Bu_,Ba_,mu,vertices);
-
+disp('++++++++++++++++++++++++++++++++++++++++')
 global PertinenciaNormalizada
 h = PertinenciaNormalizada.h;
 fuzzyK = 0;
@@ -85,5 +86,7 @@ for i=1:vertices
     fuzzyK = fuzzyK + simplify(h(i)*K{i});
 end
 dlmwrite('../OutControllerGains/outK.txt',char(simplify(fuzzyK)),'delimiter','')
-
+disp('--> Fuzzy Controller Gains written to file')
+disp('--> PDC Controller Obtained')
+disp('+++++++++++++++++++++++++++++++++++++++++++')
 
