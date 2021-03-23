@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  21 MAR 2021 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.10)  23 MAR 2021 20:03
 entering extended mode
 **./TrabalhoFinalPDCcontrol.tex
 (TrabalhoFinalPDCcontrol.tex
@@ -640,7 +640,7 @@ LaTeX Info: Redefining \nameref on input line 70.
 
 
 (report_template/ReportTemplate-PT.tex
-<report_template/macro_inline_name.pdf, id=27, 1185.55937pt x 303.23796pt>
+<report_template/macro_inline_name.pdf, id=47, 1185.55937pt x 303.23796pt>
 File: report_template/macro_inline_name.pdf Graphic file (type pdf)
 <use report_template/macro_inline_name.pdf>
 Package pdftex.def Info: report_template/macro_inline_name.pdf  used on input l
@@ -699,16 +699,16 @@ plate/macro_inline_name.pdf>]) (TrabalhoFinalPDCcontrol.toc)
 
 
 ]
-<fig/pendulo.png, id=78, 335.45325pt x 293.898pt>
+<fig/pendulo.png, id=103, 335.45325pt x 293.898pt>
 File: fig/pendulo.png Graphic file (type png)
 <use fig/pendulo.png>
-Package pdftex.def Info: fig/pendulo.png  used on input line 141.
+Package pdftex.def Info: fig/pendulo.png  used on input line 148.
 (pdftex.def)             Requested size: 167.7262pt x 146.94862pt.
-<report_template/macro_inline.pdf, id=80, 1185.55937pt x 239.93188pt>
+<report_template/macro_inline.pdf, id=105, 1185.55937pt x 239.93188pt>
 File: report_template/macro_inline.pdf Graphic file (type pdf)
 <use report_template/macro_inline.pdf>
 Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 2
-05.
+12.
 (pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
 
 
@@ -723,40 +723,31 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.205 \end{gather}
+l.212 \end{gather}
                    [1 <./report_template/macro_inline.pdf> <./fig/pendulo.png>]
+
+Overfull \hbox (21.95416pt too wide) detected at line 236
+[]
+ []
+
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-30.
+37.
 ("D:\dados\Latex\Compilador Latex\install\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 248.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 248.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 248.
+Overfull \hbox (20.9453pt too wide) detected at line 278
+[]
+ []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 248.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 248.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\infty' on input line 248.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 248.
+Overfull \hbox (46.7637pt too wide) detected at line 285
+[]
+ []
 
 File: report_template/macro_inline.pdf Graphic file (type pdf)
 <use report_template/macro_inline.pdf>
 Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 2
-52.
+92.
 (pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -770,42 +761,456 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.252 \end{document}
-                     [2] (TrabalhoFinalPDCcontrol.aux
-(report_template/ReportTemplate-PT.aux))
+l.292 \end{gather}
+                   [2]
+("D:\dados\Latex\Compilador Latex\install\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
+15.
+
+("D:\dados\Latex\Compilador Latex\install\tex/latex/lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 3
+46.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[3]
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 4
+13.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[4]
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 4
+83.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[5]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 538
+.
+ ("D:\dados\Latex\Compilador Latex\install\tex/latex/amsfonts\ueuf.fd"
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 5
+62.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[6]
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 592.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 592.
+
+
+Overfull \hbox (33.73131pt too wide) detected at line 592
+[]
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 604.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 604.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 604.
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 604.
+
+
+Overfull \hbox (54.92688pt too wide) detected at line 604
+[]
+ []
+
+
+Overfull \hbox (40.86638pt too wide) detected at line 611
+[]
+ []
+
+<fig/pdcmuk1.png, id=443, 393.26926pt x 305.34074pt>
+File: fig/pdcmuk1.png Graphic file (type png)
+<use fig/pdcmuk1.png>
+Package pdftex.def Info: fig/pdcmuk1.png  used on input line 626.
+(pdftex.def)             Requested size: 275.2866pt x 213.73706pt.
+
+Overfull \hbox (130.17607pt too wide) in paragraph at lines 626--627
+ [][] 
+ []
+
+<fig/pdcmuk2.png, id=444, 389.65575pt x 299.31825pt>
+File: fig/pdcmuk2.png Graphic file (type png)
+<use fig/pdcmuk2.png>
+Package pdftex.def Info: fig/pdcmuk2.png  used on input line 632.
+(pdftex.def)             Requested size: 272.75716pt x 209.52135pt.
+
+Overfull \hbox (55.09505pt too wide) in paragraph at lines 632--633
+ [][] 
+ []
+
+<fig/pdcmuk3.png, id=445, 390.258pt x 305.34074pt>
+File: fig/pdcmuk3.png Graphic file (type png)
+<use fig/pdcmuk3.png>
+Package pdftex.def Info: fig/pdcmuk3.png  used on input line 640.
+(pdftex.def)             Requested size: 273.17873pt x 213.73706pt.
+
+Overfull \hbox (128.06819pt too wide) in paragraph at lines 640--641
+ [][] 
+ []
+
+<fig/pdcmuk4.png, id=446, 393.26926pt x 299.31825pt>
+File: fig/pdcmuk4.png Graphic file (type png)
+<use fig/pdcmuk4.png>
+Package pdftex.def Info: fig/pdcmuk4.png  used on input line 646.
+(pdftex.def)             Requested size: 275.2866pt x 209.52135pt.
+
+Overfull \hbox (57.6245pt too wide) in paragraph at lines 646--647
+ [][] 
+ []
+
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 6
+51.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[7]
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 6
+51.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[8 <./fig/pdcmuk1.png> <./fig/pdcmuk2.png> <./fig/pdcmuk3.png> <./fig/pdcmuk4.p
+ng>]
+<fig/PDCsimulink.png, id=486, 816.651pt x 374.5995pt>
+File: fig/PDCsimulink.png Graphic file (type png)
+<use fig/PDCsimulink.png>
+Package pdftex.def Info: fig/PDCsimulink.png  used on input line 713.
+(pdftex.def)             Requested size: 489.99438pt x 224.76143pt.
+
+Overfull \hbox (6.29752pt too wide) in paragraph at lines 713--714
+ [][] 
+ []
+
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 7
+15.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[9]
+<fig/PDCresult.png, id=551, 964.20226pt x 528.17325pt>
+File: fig/PDCresult.png Graphic file (type png)
+<use fig/PDCresult.png>
+Package pdftex.def Info: fig/PDCresult.png  used on input line 724.
+(pdftex.def)             Requested size: 482.09995pt x 264.08597pt.
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 7
+28.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[10 <./fig/PDCsimulink.png> <./fig/PDCresult.png>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 729.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 729.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 729.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 729.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\infty' on input line 729.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 729.
+
+
+Overfull \hbox (39.43439pt too wide) detected at line 758
+[]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 768.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 768.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\infty' on input line 768.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 768.
+
+<fig/pdchmuk1.png, id=562, 393.26926pt x 302.3295pt>
+File: fig/pdchmuk1.png Graphic file (type png)
+<use fig/pdchmuk1.png>
+Package pdftex.def Info: fig/pdchmuk1.png  used on input line 774.
+(pdftex.def)             Requested size: 275.2866pt x 211.6292pt.
+
+Overfull \hbox (130.17607pt too wide) in paragraph at lines 774--775
+ [][] 
+ []
+
+<fig/pdchmuk2.png, id=563, 398.6895pt x 302.3295pt>
+File: fig/pdchmuk2.png Graphic file (type png)
+<use fig/pdchmuk2.png>
+Package pdftex.def Info: fig/pdchmuk2.png  used on input line 780.
+(pdftex.def)             Requested size: 279.08073pt x 211.6292pt.
+
+Overfull \hbox (61.41862pt too wide) in paragraph at lines 780--781
+ [][] 
+ []
+
+<fig/pdchmuk3.png, id=564, 398.6895pt x 311.36325pt>
+File: fig/pdchmuk3.png Graphic file (type png)
+<use fig/pdchmuk3.png>
+Package pdftex.def Info: fig/pdchmuk3.png  used on input line 788.
+(pdftex.def)             Requested size: 279.08073pt x 217.95279pt.
+
+Overfull \hbox (133.9702pt too wide) in paragraph at lines 788--789
+ [][] 
+ []
+
+<fig/pdchmuk4.png, id=565, 395.67825pt x 305.943pt>
+File: fig/pdchmuk4.png Graphic file (type png)
+<use fig/pdchmuk4.png>
+Package pdftex.def Info: fig/pdchmuk4.png  used on input line 794.
+(pdftex.def)             Requested size: 276.97289pt x 214.15862pt.
+
+Overfull \hbox (59.31078pt too wide) in paragraph at lines 794--795
+ [][] 
+ []
+
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 7
+97.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[11]
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 8
+18.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[12 <./fig/pdchmuk1.png> <./fig/pdchmuk2.png> <./fig/pdchmuk3.png> <./fig/pdchm
+uk4.png>]
+<fig/PDCHsimulink.png, id=612, 630.55576pt x 305.34074pt>
+File: fig/PDCHsimulink.png Graphic file (type png)
+<use fig/PDCHsimulink.png>
+Package pdftex.def Info: fig/PDCHsimulink.png  used on input line 861.
+(pdftex.def)             Requested size: 378.33636pt x 183.20586pt.
+<fig/PDCHresult.png, id=613, 967.2135pt x 531.78674pt>
+File: fig/PDCHresult.png Graphic file (type png)
+<use fig/PDCHresult.png>
+Package pdftex.def Info: fig/PDCHresult.png  used on input line 871.
+(pdftex.def)             Requested size: 483.60556pt x 265.89272pt.
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 8
+73.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[13 <./fig/PDCHsimulink.png>]
+<fig/PDCHinfcompare.png, id=662, 958.782pt x 534.19576pt>
+File: fig/PDCHinfcompare.png Graphic file (type png)
+<use fig/PDCHinfcompare.png>
+Package pdftex.def Info: fig/PDCHinfcompare.png  used on input line 879.
+(pdftex.def)             Requested size: 479.38983pt x 267.09723pt.
+
+Overfull \hbox (75.13669pt too wide) in paragraph at lines 883--884
+ [][] \T1/lmr/m/n/9 As si-mu-la-ções po-dem ser tes-ta-das aces-sando meu re-po
+-si-tó-rio no github: [][]$\T1/lmtt/m/n/9 https : / / github . com / Jonatan29 
+/ ParallelDistributedControl /
+ []
+
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 8
+84.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[14 <./fig/PDCHresult.png> <./fig/PDCHinfcompare.png>]
+File: report_template/macro_inline.pdf Graphic file (type pdf)
+<use report_template/macro_inline.pdf>
+Package pdftex.def Info: report_template/macro_inline.pdf  used on input line 8
+84.
+(pdftex.def)             Requested size: 72.55157pt x 14.68085pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.28088pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.28088pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.28088pt}.
+
+[15] (TrabalhoFinalPDCcontrol.aux (report_template/ReportTemplate-PT.aux))
 Package rerunfilecheck Info: File `TrabalhoFinalPDCcontrol.out' has not changed
 .
-(rerunfilecheck)             Checksum: 9C2271145DF2CB0F1614E513F8187681;477.
+(rerunfilecheck)             Checksum: 2B80DDB23FDC41F98C044862616E827C;852.
  ) 
 Here is how much of TeX's memory you used:
- 12898 strings out of 479618
- 198143 string characters out of 2867341
- 546028 words of memory out of 3000000
- 29758 multiletter control sequences out of 15000+200000
- 478695 words of font info for 87 fonts, out of 3000000 for 9000
+ 14516 strings out of 479618
+ 217596 string characters out of 2867341
+ 1508266 words of memory out of 3000000
+ 30911 multiletter control sequences out of 15000+200000
+ 509301 words of font info for 116 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,21n,74p,694b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/dados/Latex/Compilador Latex/install/fonts/enc/dvips/lm/lm-mathsy.enc}{D:
-/dados/Latex/Compilador Latex/install/fonts/enc/dvips/lm/lm-ts1.enc}{D:/dados/L
-atex/Compilador Latex/install/fonts/enc/dvips/lm/lm-rm.enc}{D:/dados/Latex/Comp
-ilador Latex/install/fonts/enc/dvips/lm/lm-mathit.enc}{D:/dados/Latex/Compilado
-r Latex/install/fonts/enc/dvips/lm/lm-mathex.enc}{D:/dados/Latex/Compilador Lat
-ex/install/fonts/enc/dvips/lm/lm-ec.enc}<D:/dados/Latex/Compilador Latex/instal
-l/fonts/type1/public/lm/lmbx10.pfb><D:/dados/Latex/Compilador Latex/install/fon
-ts/type1/public/lm/lmbx12.pfb><D:/dados/Latex/Compilador Latex/install/fonts/ty
-pe1/public/lm/lmex10.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/p
-ublic/lm/lmmi10.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public
-/lm/lmmi7.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lm
-mib10.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmmib7
-.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmr10.pfb><
-D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmr12.pfb><D:/dad
-os/Latex/Compilador Latex/install/fonts/type1/public/lm/lmr7.pfb><D:/dados/Late
-x/Compilador Latex/install/fonts/type1/public/lm/lmsy10.pfb><D:/dados/Latex/Com
-pilador Latex/install/fonts/type1/public/lm/lmsy7.pfb><D:/dados/Latex/Compilado
-r Latex/install/fonts/type1/public/lm/lmsy8.pfb>
-Output written on TrabalhoFinalPDCcontrol.pdf (4 pages, 264152 bytes).
+ 71i,25n,74p,694b,2476s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/dados/Latex/Compilador Latex/install/fonts/enc/dvips/lm/lm-ec.enc}{D:/dad
+os/Latex/Compilador Latex/install/fonts/enc/dvips/lm/lm-mathit.enc}{D:/dados/La
+tex/Compilador Latex/install/fonts/enc/dvips/lm/lm-rm.enc}{D:/dados/Latex/Compi
+lador Latex/install/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/dados/Latex/Compilador
+ Latex/install/fonts/enc/dvips/lm/lm-ts1.enc}{D:/dados/Latex/Compilador Latex/i
+nstall/fonts/enc/dvips/lm/lm-mathex.enc}<D:/dados/Latex/Compilador Latex/instal
+l/fonts/type1/public/amsfonts/euler/eufb10.pfb><D:/dados/Latex/Compilador Latex
+/install/fonts/type1/public/amsfonts/euler/eufm10.pfb><D:/dados/Latex/Compilado
+r Latex/install/fonts/type1/public/lm/lmbsy10.pfb><D:/dados/Latex/Compilador La
+tex/install/fonts/type1/public/lm/lmbsy5.pfb><D:/dados/Latex/Compilador Latex/i
+nstall/fonts/type1/public/lm/lmbx10.pfb><D:/dados/Latex/Compilador Latex/instal
+l/fonts/type1/public/lm/lmbx12.pfb><D:/dados/Latex/Compilador Latex/install/fon
+ts/type1/public/lm/lmbx5.pfb><D:/dados/Latex/Compilador Latex/install/fonts/typ
+e1/public/lm/lmbx9.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/pub
+lic/lm/lmex10.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/l
+m/lmmi10.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmm
+i5.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmmi6.pfb
+><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmmi7.pfb><D:/d
+ados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmmi9.pfb><D:/dados/L
+atex/Compilador Latex/install/fonts/type1/public/lm/lmmib10.pfb><D:/dados/Latex
+/Compilador Latex/install/fonts/type1/public/lm/lmmib5.pfb><D:/dados/Latex/Comp
+ilador Latex/install/fonts/type1/public/lm/lmmib7.pfb><D:/dados/Latex/Compilado
+r Latex/install/fonts/type1/public/lm/lmr10.pfb><D:/dados/Latex/Compilador Late
+x/install/fonts/type1/public/lm/lmr12.pfb><D:/dados/Latex/Compilador Latex/inst
+all/fonts/type1/public/lm/lmr5.pfb><D:/dados/Latex/Compilador Latex/install/fon
+ts/type1/public/lm/lmr6.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type
+1/public/lm/lmr7.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/publi
+c/lm/lmr9.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lm
+ri9.pfb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmsy10.p
+fb><D:/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmsy5.pfb><D:
+/dados/Latex/Compilador Latex/install/fonts/type1/public/lm/lmsy6.pfb><D:/dados
+/Latex/Compilador Latex/install/fonts/type1/public/lm/lmsy7.pfb><D:/dados/Latex
+/Compilador Latex/install/fonts/type1/public/lm/lmsy8.pfb><D:/dados/Latex/Compi
+lador Latex/install/fonts/type1/public/lm/lmsy9.pfb><D:/dados/Latex/Compilador 
+Latex/install/fonts/type1/public/lm/lmtt8.pfb><D:/dados/Latex/Compilador Latex/
+install/fonts/type1/public/lm/lmtt9.pfb>
+Output written on TrabalhoFinalPDCcontrol.pdf (17 pages, 1060230 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 64 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 886 PDF objects out of 1000 (max. 8388607)
+ 454 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

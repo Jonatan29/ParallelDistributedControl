@@ -68,7 +68,7 @@ Az = [0 0 1 0;...
  for th = IntervalTheta(1):0.0175:IntervalTheta(2)
     for om = IntervalOmega(1):0.0175:IntervalOmega(2)
         teste(it) = sin(th)*om;
-        if teste(it) < minZ2
+        if teste(it) < minZ2   
             minZ2 = teste(it);
         end
         if teste(it) > maxZ2

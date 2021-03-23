@@ -23,8 +23,8 @@ addpath('../SimulinkFiles')
 SimTime = input('-->Define the duration of the simulation:')
 out = sim('SIMULINK_InvertedPendulum_PDCHinf',SimTime)
 disp('--> The initial Conditions are:')
-InitCondqp = [0 pi/4];
-InitCondq = [0 0];
+InitCondqp = [0 0];
+InitCondq = [0 pi/4];
 %  InitCond = [0 pi/4 0 0];
 %InitCond = [0 0 0 0];
 %set_param('SIMULINK_InvertedPendulum_PDCHinf/Integrator','InitialCondition',mat2str(InitCond))

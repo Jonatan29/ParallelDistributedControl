@@ -9,16 +9,20 @@ warning('--> Make sure both simulinks are running with the same step values')
 warning('--> Make sure both the disturbance applied is the same for both situations')
 disp('++++++++++++++++++++++++++++++++++++')
 %% Define Initial Conditions
-InitCondqp = [0 pi/4];
-InitCondq = [0 0];
+disp('--> The initial Conditions are:')
+disp('Initial Conditions - qp(0):')
+InitCondqp = [0 0];
+disp(InitCondqp)
+disp('Initial Conditions - q(0):')
+InitCondq = [0 pi/4];
+disp(InitCondq)
 %% Run Simulink PDC Control
 out = sim('SIMULINK_InvertedPendulum_PDC',SimTime)
-disp('--> The initial Conditions are:')
+
 % set_param('SIMULINK_InvertedPendulum_PDC/Integrator','InitialCondition',mat2str(InitCond))
 set_param('SIMULINK_InvertedPendulum_PDC/Integratorqpp','InitialCondition',mat2str(InitCondqp))
 set_param('SIMULINK_InvertedPendulum_PDC/Integratorqp','InitialCondition',mat2str(InitCondq))
-disp(InitCondqp)
-disp(InitCondq)
+
 X1 = out.outX(:,1);
 X2 = out.outX(:,2);
 X3 = out.outX(:,3);
@@ -41,7 +45,6 @@ X4_ = out_.outX(:,4);
 U_ = out_.outU;
 ALFA_ = out.outAlfa;
 % time = out.tout;
-
 %% Plot Results
 figure
 subplot(2,2,1)
